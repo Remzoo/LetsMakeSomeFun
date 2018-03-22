@@ -20,7 +20,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private final String IP = "192.168.0.1";
     private final int PORT =  9876;
 
-    @BindViews({R.id.turn_on, R.id.turn_off, R.id.vga, R.id.hdmi, R.id.volume_minus, R.id.volume_plus})
+    // Here you have to add button id when adding button to application
+    @BindViews({
+            R.id.turn_on,
+            R.id.turn_off,
+            R.id.vga,
+            R.id.hdmi,
+            R.id.volume_minus,
+            R.id.volume_plus
+    })
     List<Button> actionButtons;
 
     @Override
